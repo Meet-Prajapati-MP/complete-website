@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
 
 :root {
     --orange: #FF6B35;

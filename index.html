@@ -13,15 +13,24 @@
 </head>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-  const hamburger = document.getElementById("humburger");
+  const humburger = document.getElementById("humburger");
   const navLinks = document.getElementById("navLinks");
 
-  hamburger.addEventListener("click", () => {
+  humburger.addEventListener("click", () => {
     navLinks.classList.toggle("active");
-    hamburger.classList.toggle("active");
+    humburger.classList.toggle("active");
+  });
+
+  document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("active");
+      humburger.classList.remove("active");
+    });
   });
 });
 </script>
+
+
 <body>
     <div class="bg-pattern"></div>
 

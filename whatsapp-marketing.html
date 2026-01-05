@@ -10,14 +10,22 @@
 </head>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-  const hamburger = document.getElementById("humburger");
+  const humburger = document.getElementById("humburger");
   const navLinks = document.getElementById("navLinks");
 
-  hamburger.addEventListener("click", () => {
+  humburger.addEventListener("click", () => {
     navLinks.classList.toggle("active");
-    hamburger.classList.toggle("active");
+    humburger.classList.toggle("active");
+  });
+
+  document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("active");
+      humburger.classList.remove("active");
+    });
   });
 });
+
 </script>
 <body>
     <div class="bg-pattern"></div>
@@ -38,13 +46,6 @@ document.addEventListener("DOMContentLoaded", () => {
       <div class="bar"></div>
       <div class="bar"></div>
     </div>
-    <ul class="nav-links" id="navLinks">
-                <li><a href="index.html#services">Services</a></li>
-                <li><a href="index.html#why-us">Why Us</a></li>
-                <li><a href="case-studies.html">Success Stories</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-</ul>
         </nav>
     </header>
     
