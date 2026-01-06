@@ -900,20 +900,25 @@ footer {
 }
 
 .social-link {
-    width: 40px;
-    height: 40px;
-    background: rgba(255, 255, 255, 0.1);
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.3s;
     text-decoration: none;
+    gap: 20px;
+}
+
+.social-link img {
+    width: 30px;
+    height: 30px;
 }
 
 .social-link:hover {
-    background: var(--orange);
     transform: translateY(-3px);
+    transition: .3s;
 }
 
 .footer-bottom {
@@ -1077,4 +1082,9 @@ footer {
     gap: 5px;
     cursor: pointer;
   }
+  .page-content {
+        margin-top: 20px;
+        min-height: 60vh;
+        padding: 4rem 2rem;
+    }
 }
