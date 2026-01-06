@@ -11,7 +11,10 @@
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const humburger = document.getElementById("humburger");
-  const navLinks = document.getElementById("navLinks");
+  const navLinks = document.querySelector(".nav-links");
+
+  // ✅ If navbar doesn't exist on this page, stop JS
+  if (!humburger || !navLinks) return;
 
   humburger.addEventListener("click", () => {
     navLinks.classList.toggle("active");
@@ -66,10 +69,10 @@ function HireMe(event) {
             </ul>
             <a href="contact.html" class="cta-btn">Book Free Call</a>
             <div class="humburger" id="humburger">
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
-    </div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
         </nav>
     </header>
     
@@ -80,7 +83,7 @@ function HireMe(event) {
     </div>
     
     <div class="content-section">
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
+        <div class="contact-grid">
             <div>
                 <h2>Get in Touch</h2>
                 <h3>Office Address</h3>

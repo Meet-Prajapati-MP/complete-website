@@ -210,6 +210,14 @@ nav {
     box-shadow: 0 10px 30px var(--shadow);
 }
 
+/* Layout for contact page: two columns on desktop, single column on mobile */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
 .content-section h2 {
     font-size: 2.5rem;
     color: var(--deep-blue);
@@ -1058,6 +1066,11 @@ footer {
 
     .nav-links {
         display: none;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
     }
 
     .section-header h2 {

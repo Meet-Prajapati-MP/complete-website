@@ -11,7 +11,10 @@
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const humburger = document.getElementById("humburger");
-  const navLinks = document.getElementById("navLinks");
+  const navLinks = document.querySelector(".nav-links");
+
+  // ✅ If navbar doesn't exist on this page, stop JS
+  if (!humburger || !navLinks) return;
 
   humburger.addEventListener("click", () => {
     navLinks.classList.toggle("active");

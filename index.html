@@ -12,22 +12,22 @@
 
 </head>
 <script>
-document.addEventListener("DOMContentLoaded", () => {
-  const humburger = document.getElementById("humburger");
-  const navLinks = document.getElementById("navLinks");
+    document.addEventListener("DOMContentLoaded", () => {
+    const humburger = document.getElementById("humburger");
+    const navLinks = document.getElementById("navLinks");
 
-  humburger.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-    humburger.classList.toggle("active");
-  });
-
-  document.querySelectorAll(".nav-links a").forEach(link => {
-    link.addEventListener("click", () => {
-      navLinks.classList.remove("active");
-      humburger.classList.remove("active");
+    humburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        humburger.classList.toggle("active");
     });
-  });
-});
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+        link.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+        humburger.classList.remove("active");
+        });
+    });
+    });
 </script>
 
 
