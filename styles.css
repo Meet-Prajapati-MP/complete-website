@@ -24,7 +24,7 @@ body {
     color: var(--dark);
     background: var(--cream);
     overflow-x: hidden;
-    padding-top: 70px; /* space for fixed header */
+    padding-top: 10px; /* space for fixed header */
 }
 
 h1, h2, h3 {
@@ -325,6 +325,12 @@ nav {
     align-items: center;
     position: relative;
     overflow: hidden;
+    background: linear-gradient(
+    135deg,
+    #bcb5f9 0%,  /* soft lavender */  /* soft peach */
+    #fff1e8 50%,  /* pastel blue */
+    #bcb5f9 100%  /* soft lavender */
+  );
 }
 
 .hero-content {
@@ -1100,4 +1106,5 @@ footer {
         min-height: 60vh;
         padding: 4rem 2rem;
     }
+
 }
